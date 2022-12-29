@@ -1,3 +1,10 @@
+//
+//  ContentView.swift
+//  swifttestapp
+//
+//  Created by Timo Wester on 29/12/2022.
+//
+
 import SwiftUI
 
 struct ContentView: View {
@@ -9,9 +16,11 @@ struct ContentView: View {
         
             TextField("Enter your name", text: $name)
             Text("Hello, \(name)!")
-            Text("Hello, \(name)!")
-        }
         
+        Button("hiii"){
+            print(greet(person: name))
+        }
+        }
     }
 }
 
@@ -22,4 +31,9 @@ struct ContentView_Previews: PreviewProvider {
             ContentView()
         }
     }
+}
+
+func greet(person: String) -> String {
+    let greeting = "Hello, " + person + "!"
+    return greeting
 }
