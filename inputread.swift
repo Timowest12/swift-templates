@@ -1,9 +1,3 @@
-//
-//  ContentView.swift
-//  swifttestapp
-//
-//  Created by Timo Wester on 29/12/2022.
-//
 
 import SwiftUI
 
